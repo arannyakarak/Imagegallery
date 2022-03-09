@@ -13,7 +13,6 @@ function prevSlide() {
   showSlides();
   timer = _timer;
 }
-
 // Thumbnail image controlls
 function currentSlide(n) {
   slideIndex = n - 1;
@@ -23,6 +22,7 @@ function currentSlide(n) {
 
 function showSlides() {
   let slides = document.querySelectorAll(".mySlides");
+
   let dots = document.querySelectorAll(".dots");
 
   if (slideIndex > slides.length - 1) slideIndex = 0;
@@ -71,27 +71,27 @@ function clicked(e) {
         if(e.target.tagName == "BUTTON") {  
             
             img.parentElement.classList.remove("hide");
-            if(e.target.innerHTML == "Show All") {
+            if(e.target.innerHTML == "All") {
 
                 if(img.classList.contains("all")) {
                     img.parentElement.classList.remove("hide");
                 }
         
-            } else if(e.target.innerHTML == "Cars") {
+            } else if(e.target.innerHTML == "Festival") {
 
-                if(img.dataset.select !== "cars") {
+                if(img.dataset.select !== "festival") {
                     img.parentElement.classList.add("hide");
                 }
             
-            } else if(e.target.innerHTML == "Nature") {
+            } else if(e.target.innerHTML == "Heritage") {
 
-                if(img.dataset.select !== "nature") {
+                if(img.dataset.select !== "heritage") {
                     img.parentElement.classList.add("hide");
                 }
 
             } else {
 
-                if(img.dataset.select !== "people") {
+                if(img.dataset.select !== "food") {
                     img.parentElement.classList.add("hide");
                 }
                

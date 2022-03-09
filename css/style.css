@@ -18,8 +18,11 @@
     /* overflow: hidden; */
     background-color: rgb(188, 224, 224);
   }
+  .title{
+      text-align: center;
+  }
   
-  .carousel-container {
+  /* .carousel-container { 
     border-radius: 30px;
     overflow: hidden;
     max-width: 950px;
@@ -28,11 +31,19 @@
     box-shadow: 0 0 30px -20px #233b53;
     margin: auto;
     z-index: 0;
+  }*/
+  .frame {
+    position:relative;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 950px;
+    box-shadow: 0 0 30px -20px #233b53;
+    margin: auto;
+    z-index: 0;
   }
-  
   /* Hide the images by default */
   .mySlides {
-    display: none;
+    display: block;
   }
   .mySlides img {
     display: block;
@@ -125,8 +136,6 @@
   
   /* transition animation */
   .animate {
-    -webkit-animation-name: animate;
-    -webkit-animation-duration: 1s;
     animation-name: animate;
     animation-duration: 2s;
   }
