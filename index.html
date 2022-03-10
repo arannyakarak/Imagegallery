@@ -1,187 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ImageGallery</title>
     <link rel="stylesheet" href="css/style.css">
-    <script  src="./script.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
+
 <body>
     <!-- Full-width images with number and caption text -->
-<!-- Full-width images with number and caption text -->
-<!-- <div class="container"> -->
-<h1 class="title">Reflect of Indian culture</h1>
-<!-- <div class="carousel-container"> -->
+    <!-- Full-width images with number and caption text -->
+    <!-- <div class="container"> -->
+    <h1 class="title">Reflect of Indian culture</h1>
+    <!-- <div class="carousel-container"> -->
     <figure class="frame">
-    <div class="mySlides animate">
-      <img src="images/tajmahal3jpg.jpg" alt="slide" />
-      <div class="number">1 / 7</div>
-      <div class="text">Taj Mahal</div>
-    </div>
-  
-    <div class="mySlides animate">
-      <img src="images/holi3.jpg" alt="slide" />
-      <div class="number">2 / 7</div>
-      <div class="text">Holi</div>
-    </div>
-  
-    <div class="mySlides animate">
-      <img src="images/hawamahal.jpg" alt="slide" />
-      <div class="number">3 / 7</div>
-      <div class="text">Hawa Mahal</div>
-    </div>
-  
-    <div class="mySlides animate">
-      <img src="images/durgapuja2.jpg" alt="slide" />
-      <div class="number">4 / 7</div>
-      <div class="text">Durga Puja</div>
-    </div>
-  
-    <div class="mySlides animate">
-      <img src="images/goldentemple.jpg" alt="slide" />
-      <div class="number">5 / 7</div>
-      <div class="text">Golden Temple</div>
-    </div>
-    <div class="mySlides animate">
-        <img src="images/dosa1.jpg" alt="slide" />
-        <div class="number">6 / 7</div>
-        <div class="text">Dosa</div>
-      </div>
-      <div class="mySlides animate">
-        <img src="images/eid4.jpg" alt="slide" />
-        <div class="number">7 / 7</div>
-        <div class="text">Eid al-Fitr</div>
-      </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="prevSlide()">&#10094;</a>
-    <a class="next" onclick="nextSlide()">&#10095;</a>
-  
-    <!-- The dots/circles -->
-    <div class="dots-container">
-      <span class="dots" onclick="currentSlide(1)"></span>
-      <span class="dots" onclick="currentSlide(2)"></span>
-      <span class="dots" onclick="currentSlide(3)"></span>
-      <span class="dots" onclick="currentSlide(4)"></span>
-      <span class="dots" onclick="currentSlide(5)"></span>
-      <span class="dots" onclick="currentSlide(6)"></span>
-      <span class="dots" onclick="currentSlide(7)"></span>
-    </div>
-</figure>
-  <!-- </div> -->
-  
-  <div class="gallery2">
-    <div class="maincontainer">
-        <div class="gallery-header">
-            <button class="btn">All</button>
-            <button class="btn">Festival</button>
-            <button class="btn">Heritage</button>
-            <button class="btn">Food</button>
+        <div class="mySlides animate">
+            <img src="images/tajmahal3jpg.jpg" alt="slide" />
+            <div class="number">1 / 7</div>
+            <div class="text">Taj Mahal</div>
         </div>
-        <div class="gallery-body">
-            <div class="img-container">
-                <div class="all item" data-select="heritage"><img src="images/tajmahal3jpg.jpg">
-                   <h3>Heritage</h3>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Tajmahal</h3>
-                </div>
+
+        <div class="mySlides animate">
+            <img src="images/holi3.jpg" alt="slide" />
+            <div class="number">2 / 7</div>
+            <div class="text">Holi</div>
+        </div>
+
+        <div class="mySlides animate">
+            <img src="images/hawamahal.jpg" alt="slide" />
+            <div class="number">3 / 7</div>
+            <div class="text">Hawa Mahal</div>
+        </div>
+
+        <div class="mySlides animate">
+            <img src="images/durgapuja2.jpg" alt="slide" />
+            <div class="number">4 / 7</div>
+            <div class="text">Durga Puja</div>
+        </div>
+
+        <div class="mySlides animate">
+            <img src="images/goldentemple.jpg" alt="slide" />
+            <div class="number">5 / 7</div>
+            <div class="text">Golden Temple</div>
+        </div>
+        <div class="mySlides animate">
+            <img src="images/dosa1.jpg" alt="slide" />
+            <div class="number">6 / 7</div>
+            <div class="text">Dosa</div>
+        </div>
+        <div class="mySlides animate">
+            <img src="images/eid4.jpg" alt="slide" />
+            <div class="number">7 / 7</div>
+            <div class="text">Eid al-Fitr</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div class="dots-container">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
+            <span class="dots" onclick="currentSlide(5)"></span>
+            <span class="dots" onclick="currentSlide(6)"></span>
+            <span class="dots" onclick="currentSlide(7)"></span>
+        </div>
+    </figure>
+    <!-- </div> -->
+
+    <!-- photo gallery with diffrent category -->
+    <div class="gallery2">
+        <div class="maincontainer">
+            <div class="gallery-header">
+                <button class="btn">All</button>
+                <button class="btn">Festival</button>
+                <button class="btn">Heritage</button>
+                <button class="btn">Food</button>
             </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="food"><img src="images/dosa1.jpg">
-                    <h3>food</h3>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Dosa</h3>
+            <div class="gallery-body">
+                <div class="img-container">
+                    <div class="all item" data-select="heritage"><img src="images/tajmahal3jpg.jpg">
+                        <h3>Heritage</h3>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Tajmahal</h3>
+                        </div>
+                    </div>
                 </div>
+                <div class="img-container">
+                    <div class="all item" data-select="food"><img src="images/dosa1.jpg">
+                        <h3>Food</h3>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Dosa</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="festival"><img src="images/durgapuja2.jpg">
-                    <h3>Festival</h3>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Durga Puja</h3>
+                <div class="img-container">
+                    <div class="all item" data-select="festival"><img src="images/durgapuja2.jpg">
+                        <h3>Festival</h3>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Durga Puja</h3>
+                        </div>
+                    </div>
                 </div>
+                <div class="img-container">
+                    <div class="all item" data-select="heritage"><img src="images/goldentemple.jpg">
+                        <h3>Heritage</h3>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">GoldenTemple</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="heritage"><img src="images/goldentemple.jpg">
-                    <h3>Heritage</h3>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">GoldenTemple</h3>
+                <div class="img-container">
+                    <div class="all item" data-select="festival"><img src="images/diwali.jpg">
+                        <div>
+                            <h3>Festival</h3>
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Diwali</h3>
+                        </div>
+                    </div>
                 </div>
+                <div class="img-container">
+                    <div class="all item" data-select="heritage"><img src="images/hawamahal.jpg">
+                        <div>
+                            <h3>Heritage</h3>
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Hawa Mahal</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="festival"><img src="images/diwali.jpg">
-                    <div><h3>Festival</h3></div>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Diwali</h3>
+                <div class="img-container">
+                    <div class="all item" data-select="food"><img src="images/biriyani.jpg">
+                        <div>
+                            <h3>Food</h3>
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Biriyani</h3>
+                        </div>
+                    </div>
                 </div>
+                <div class="img-container">
+                    <div class="all item" data-select="festival"><img src="images/holi3.jpg">
+                        <div>
+                            <h3>Festival</h3>
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">holi</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="heritage"><img src="images/hawamahal.jpg">
-                    <div><h3>Heritage</h3></div>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Hawa Mahal</h3>
+                <div class="img-container">
+                    <div class="all item" data-select="festival"><img src="images/eid4.jpg">
+                        <div>
+                            <h3>Festival</h3>
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Eid al-Fitr</h3>
+                        </div>
+                    </div>
                 </div>
+                <div class="img-container">
+                    <div class="all item" data-select="food"><img src="images/roganjosh.jpg">
+                        <div>
+                            <h3>Food</h3>
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Rogan Josh</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="food"><img src="images/biriyani.jpg">
-                    <div><h3>Food</h3></div>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Biriyani</h3>
+                <div class="img-container">
+                    <div class="all item" data-select="food"><img src="images/Fish-curry.jpg">
+                        <div>
+                            <h3>Food</h3>
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Fish Curry</h3>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="festival"><img src="images/holi3.jpg">
-                    <div><h3>Festival</h3></div>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">holi</h3>
-                </div>
-                </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="festival"><img src="images/eid4.jpg">
-                    <div><h3>Festival</h3></div>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Eid al-Fitr</h3>
-                </div>
-                </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="food"><img src="images/roganjosh.jpg">
-                    <div><h3>Food</h3></div>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Rogan Josh</h3>
-                </div>
-                </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="food"><img src="images/Fish-curry.jpg">
-                    <div><h3>Food</h3></div>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Fish Curry</h3>
-                </div>
-                </div>
-            </div>
-            <div class="img-container">
-                <div class="all item" data-select="heritage"><img src="images/indiagatejpg.jpg">
-                    <div><h3>Heritage</h3></div>
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">India Gate</h3>
-                </div>
+                <div class="img-container">
+                    <div class="all item" data-select="heritage"><img src="images/indiagatejpg.jpg">
+                        <div>
+                            <h3>Heritage</h3>
+                        </div>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">India Gate</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-        <!-- </div>  -->
- <footer>Arannya akarak</footer>
-<!-- <script  src="./script.js"></script> -->
+    <!-- </div>  -->
+    <footer>Arannya akarak</footer>
+
 </body>
+
 </html>
