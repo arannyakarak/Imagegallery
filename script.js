@@ -27,19 +27,19 @@ function showSlides() {
 
   if (slideIndex > slides.length - 1) slideIndex = 0;
   if (slideIndex < 0) slideIndex = slides.length - 1;
-  
+
   // hide all slides
   slides.forEach((slide) => {
     slide.style.display = "none";
   });
-  
+
   // show one slide base on index number
   slides[slideIndex].style.display = "block";
-  
+
   dots.forEach((dot) => {
     dot.classList.remove("active");
   });
-  
+
   dots[slideIndex].classList.add("active");
 }
 
@@ -67,35 +67,35 @@ gallery.addEventListener("click", clicked);
 
 function clicked(e) {
 
-    imgs.forEach(img => {
-        if(e.target.tagName == "BUTTON") {  
-            
-            img.parentElement.classList.remove("hide");
-            if(e.target.innerHTML == "All") {
+  imgs.forEach(img => {
+    if (e.target.tagName == "BUTTON") {
 
-                if(img.classList.contains("all")) {
-                    img.parentElement.classList.remove("hide");
-                }
-        
-            } else if(e.target.innerHTML == "Festival") {
+      img.parentElement.classList.remove("hide");
+      if (e.target.innerHTML == "All") {
 
-                if(img.dataset.select !== "festival") {
-                    img.parentElement.classList.add("hide");
-                }
-            
-            } else if(e.target.innerHTML == "Heritage") {
-
-                if(img.dataset.select !== "heritage") {
-                    img.parentElement.classList.add("hide");
-                }
-
-            } else {
-
-                if(img.dataset.select !== "food") {
-                    img.parentElement.classList.add("hide");
-                }
-               
-            }
+        if (img.classList.contains("all")) {
+          img.parentElement.classList.remove("hide");
         }
-    });    
+
+      } else if (e.target.innerHTML == "Festival") {
+
+        if (img.dataset.select !== "festival") {
+          img.parentElement.classList.add("hide");
+        }
+
+      } else if (e.target.innerHTML == "Heritage") {
+
+        if (img.dataset.select !== "heritage") {
+          img.parentElement.classList.add("hide");
+        }
+
+      } else {
+
+        if (img.dataset.select !== "food") {
+          img.parentElement.classList.add("hide");
+        }
+
+      }
+    }
+  });
 }
