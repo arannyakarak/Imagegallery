@@ -366,7 +366,7 @@ footer {
   object-fit: cover;
   transition: 150ms ease-in-out;
 }
-.next2, .previous{
+.left, .right{
   background: rgba(173, 216, 230, 0.1);
   color: #ffffff;
   border-radius: 50%;
@@ -379,16 +379,16 @@ footer {
   z-index: 5;
 }
 
-.next2:hover, .previous:hover{
+.left:hover, .right:hover{
   filter: brightness(80%);
   cursor: pointer;
 }
 
-.previous{
+.left{
   left: 25px;
   top: 50%;
 }
-.next2{
+.right{
   right: 25px;
   top: 50%;
 }
