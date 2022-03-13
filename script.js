@@ -106,8 +106,8 @@ const galleryItem = document.querySelectorAll(".all");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 const close = document.querySelector(".close");
-const next = document.querySelector(".next2");
-const prev = document.querySelector(".previous");
+const next = document.querySelector(".right");
+const prev = document.querySelector(".left");
 
 var idx_src_arr = {};
 var current_idx = 0;
