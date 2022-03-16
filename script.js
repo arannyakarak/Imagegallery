@@ -105,7 +105,7 @@ function clicked(e) {
 const galleryItem = document.querySelectorAll(".all");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
-const close = document.querySelector(".close");
+const closeBtn = document.querySelector(".close");
 const next = document.querySelector(".right");
 const prev = document.querySelector(".left");
 
@@ -122,17 +122,17 @@ galleryItem.forEach((item, i) => {
     modal.classList.add("show");
     modal.children[0].src=item.children[0].src;
   });
-})
+});
 
 //close button
-close.addEventListener("click", function(){
+closeBtn.addEventListener("click", function(){
     overlay.classList.remove("show");
     modal.classList.remove("show");
-})
+});
 
 let show_modal = (src_str) => {
   modal.children[0].src = src_str;
-}
+};
 
 //next
 next.addEventListener('click', function(){
@@ -145,7 +145,7 @@ next.addEventListener('click', function(){
     current_idx = current_idx + 1;
   }
   show_modal(idx_src_arr[current_idx]);
-})
+});
 //back
 prev.addEventListener('click', function(){
   if(current_idx == 0){
@@ -155,7 +155,4 @@ prev.addEventListener('click', function(){
     current_idx = current_idx - 1;
   }
   show_modal(idx_src_arr[current_idx]);
-})
-
-
-
+});
